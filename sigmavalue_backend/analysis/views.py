@@ -1,3 +1,5 @@
+# sigmavalue_backend/analysis/views.py
+
 from rest_framework.decorators import api_view
 from rest_framework.response import Response
 from rest_framework import status
@@ -6,6 +8,7 @@ from .serializers import AnalyzeRequestSerializer, AnalyzeResponseSerializer
 from .services.query_parser import extract_areas, detect_metric, detect_year_range
 from .services.analytics import compute_trends, build_mock_summary
 from .services.excel_loader import DatasetNotFoundError
+
 
 @api_view(["POST"])
 def analyze_view(request):
