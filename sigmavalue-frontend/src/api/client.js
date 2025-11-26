@@ -11,7 +11,7 @@ if (import.meta.env.VITE_API_BASE_URL) {
 // If running on a deployed frontend (e.g. Vercel), force using Render backend URL
 if (typeof window !== "undefined" && window.location.hostname.endsWith("vercel.app")) {
   // 🔴 IMPORTANT: change this to your actual Render backend URL
-  BASE_URL = "https://sigmavalue21.onrender.com";
+  BASE_URL = "https://sigmavalue21.onrender.com/api";
 }
 
 console.log("Using API base URL:", BASE_URL);
